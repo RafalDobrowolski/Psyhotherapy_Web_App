@@ -1,0 +1,12 @@
+.pure-menu {
+	background: $color-athens-gray;
+	.pure-menu-list {
+		@media (min-width: 48em) {
+			float: right;
+		}
+
+		.pure-menu-link {
+			color: $color-smoky;
+		}
+	}
+}

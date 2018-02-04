@@ -1,0 +1,43 @@
+.l-hero-image {
+    background-image: url(../images/bg_header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+    
+.l-hero-container-image {
+    background: transparent url(../images/bg_header.jpg) 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    margin-bottom: 3em;
+    min-height: 750px;
+    position: relative;
+
+    .l-hero-container {
+        background: #a54399;
+        border-radius: 9px;
+        float: right;
+        margin-top: 27.25em;
+        width: 50%;
+        text-align: left;
+    }
+}
+
+.l-product-offer {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    @include translate(-50%, -50%);
+    margin-bottom: -30px;
+}
+
+.pure-button {
+    padding: 1em 8em;
+    @include border-radius(10px);	
+}
+a.pure-button-primary {
+    background: $color-cabaret;
+}
