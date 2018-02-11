@@ -1,4 +1,53 @@
-.l-for-whom {
-    background: $color-moss-green;
-    padding-top: 3em;
+.l-for-whom-item {
+    padding: 1.2em 2.2em;
+    margin-right: 0;
+    margin-bottom: 2rem;
+
+    background: $color-white;
+    @include border-radius(10px);
+
+    @media screen and (min-width: 48em) {
+        min-height: 21.5em;
+        margin-right: 2rem;
+    }
+}
+
+.l-for-whom-list {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.l-for-whom-item-icon {
+    margin: 0.4em auto;
+}
+
+.l-for-whom-item-title {
+    margin-top: 0;
+}
+
+.for-whom-item-title {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.3em;
+}
+
+.pure-menu-item {
+    padding-top: .5em;
+    padding-left: .5em;
+    font-size: 0.9em;   
+}
+
+.l-menu-item {
+    &:before {
+        content: "\f00c"; /* FontAwesome Unicode */
+        font-family: FontAwesome;
+        color: $color-feijoa;
+        display: inline-block;
+        font-size: 1.3em;
+        margin-left: -1.3em; /* same as padding-left set on li */
+        width: 1.3em; /* same as padding-left set on li */
+        position: relative;
+        top: 0.3em;
+    }
 }

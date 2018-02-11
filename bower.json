@@ -17,7 +17,6 @@
   ],
   "dependencies": {
     "components-font-awesome": "^4.7.0",
-    "pure": "^1.0.0",
     "purecss-sass": "^1.0.0"
   }
 }

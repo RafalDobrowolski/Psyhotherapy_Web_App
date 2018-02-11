@@ -7,21 +7,4 @@
 @import '_hero.scss';
 @import '_for-whom.scss';
 @import '_product-description.scss';
-
-// a {
-//   	font-family: $font-lato;
-//     cursor: pointer;
-//   	text-decoration: none;
-
-//   &:hover {
-// 		text-align: center;
-//   }
-//   &:active, &:focus {
-// 		color: $color-white;
-// 		text-align: center;
-//   }
-// }
-
-// strong, b {
-//   font-weight: 700;
-// }
+@import '_offer.scss';

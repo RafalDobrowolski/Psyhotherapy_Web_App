@@ -1,42 +1,72 @@
-.l-hero-image {
-    background-image: url(../images/bg_header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-    
 .l-hero-container-image {
-    background: transparent url(../images/bg_header.jpg) 0 0 no-repeat fixed;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(255,255,255, 0.1)), url(../images/bg_header.jpg) 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
     width: 100%;
-    min-height: 750px;
     position: relative;
+    height: 370px;
 
+    @media screen and (min-width: 35.5em) {
+        height: 450px;
+    }
+
+    @media screen and (min-width: 48em) {
+        height: 550px;
+    }
+
+    @media screen and (min-width: 112em) {
+        height: 700px;
+    }
+    
     .l-hero-container {
-        background: #a54399;
         border-radius: 9px;
-        float: right;
-        margin-top: 27.25em;
-        width: 50%;
-        text-align: left;
+        margin-top: 7em;  
+        width: 100%;
+        text-align: center;
+
+        @media screen and (min-width: 35.5em) {
+            float: right;
+            margin-top: 10rem;
+            width: 70%;
+            text-align: left;
+        }
+    
+        @media screen and (min-width: 48em) {
+            float: right;
+            margin-top: 15rem;
+            width: 50%;
+            text-align: left;
+        }
     }
 }
 
 .l-product-offer {
     position: absolute;
-    bottom: -20px;
     left: 50%;
     @include translate(-50%, -50%);
-    margin-bottom: -30px;
+}
+
+.hero-container-author {
+    text-align: right;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.hero-container-text {
+    font-size: 1.602em;
+    font-weight: bold;
 }
 
 .pure-button {
-    padding: 1em 8em;
-    @include border-radius(10px);	
+    padding: 0.7em 6em;
+    @include border-radius(10px);
+    font-size: 1.2em;
+
+    @media screen and (min-width: 35.5em) {
+        padding: 1em 8em;
+    }	
 }
+
 a.pure-button-primary {
     background: $color-cabaret;
 }
