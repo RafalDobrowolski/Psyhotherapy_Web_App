@@ -1447,7 +1447,7 @@ h6 {
 .l-menu-container {
   margin: 0 auto;
   max-width: 56rem;
-  padding: .5em 0; }
+  padding: .7rem 0; }
 
 .pure-menu-heading {
   padding: 0; }
@@ -1586,7 +1586,7 @@ a.pure-button-primary {
     margin: .5rem 0; }
     @media screen and (min-width: 48em) {
       .l-offer-item:not(:first-of-type) {
-        margin-top: 4rem; } }
+        margin-top: 3rem; } }
   @media screen and (min-width: 48em) {
     .l-offer-item:last-of-type {
       margin-bottom: 2em; } }
@@ -1641,7 +1641,7 @@ a.pure-button-primary {
       float: left; } }
 
 .l-about-me {
-  padding: .5em 1.5em;
+  padding: .9em 1.8em;
   font-size: 0.9em;
   background: #fff;
   border-radius: 10px;
