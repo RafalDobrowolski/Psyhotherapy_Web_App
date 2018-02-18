@@ -1,0 +1,22 @@
+.l-about-me-img {
+    @include border-radius(10px);
+    border: 2px solid $color-white;  
+    margin-right: 1.5em;
+    margin-top: 1em;
+
+    @media screen and (min-width: 35.5em) {
+        float: left;
+    }
+}
+
+.l-about-me {
+    padding: .5em 1.5em;
+    font-size: 0.9em;
+    background: $color-white;
+    @include border-radius(10px);
+    margin-bottom: 2rem;
+
+    @media screen and (min-width: 35.5em) {
+        @include clearfix;
+    }
+}

@@ -1,5 +1,5 @@
 .l-offer-item {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 
     &:not(:first-of-type) {
         margin: .5rem 0;
@@ -45,7 +45,7 @@
 
 .offer-item-desc-title {
     font-style: italic;
-    font-weight: 900;
+    font-weight: 700;
     color: $color-cabaret;
     font-size: 1.424em;
 

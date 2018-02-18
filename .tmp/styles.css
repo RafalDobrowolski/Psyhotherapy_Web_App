@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
-@import url("https://fonts.googleapis.com/css?family=Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700,800");
 /*--------------------------------------------------------------
 Typography
 --------------------------------------------------------------*/
@@ -22,13 +22,14 @@ input,
 select,
 textarea {
   color: #656b6f;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", serif, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased; }
 
 h1 {
-  font-size: 2.027em;
+  font-size: 2.027rem;
+  margin-bottom: 1.2rem;
   line-height: 1.15;
-  font-family: "Lato", Arial, Verdana, sans-serif;
+  font-family: "Lobster", Arial, Verdana, sans-serif;
   font-style: normal;
   font-weight: 900;
   color: #635c73; }
@@ -39,7 +40,7 @@ h1 {
 h2 {
   font-size: 2.281rem;
   line-height: 1.15;
-  font-family: "Lato", Arial, Verdana, sans-serif;
+  font-family: "Lobster", Arial, Verdana, sans-serif;
   font-style: normal;
   font-weight: 900;
   color: #fff; }
@@ -47,37 +48,41 @@ h2 {
 h3 {
   font-size: 2.027rem;
   line-height: 1.15;
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 400;
   color: #fff; }
 
 h4 {
   font-size: 1.802rem;
-  font-family: "Lato", Arial, Verdana, sans-serif;
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 400;
   color: #fff; }
 
 h5 {
   font-size: 1.602rem;
-  font-family: "Lato", Arial, Verdana, sans-serif;
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 400;
   color: #fff; }
 
 h6 {
   font-size: 1.266rem;
-  font-family: "Lato", Arial, Verdana, sans-serif;
+  font-family: "Raleway", serif;
   font-style: normal;
   font-weight: 800;
   color: #635c73; }
 
 p {
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", serif;
   color: #656b6f;
   line-height: 1.8;
-  font-weight: normal; }
+  font-weight: normal;
+  font-size: .889rem; }
+  @media screen and (min-width: 35.5em) {
+    p {
+      font-size: 1rem; } }
 
 b,
 strong {
@@ -1420,7 +1425,6 @@ h5,
 h6 {
   text-rendering: optimizeLegibility;
   margin-right: 0;
-  margin-bottom: 0;
   margin-left: 0;
   padding-right: 0;
   padding-left: 0; }
@@ -1432,7 +1436,10 @@ h6 {
 .l-container {
   margin: 0 auto;
   max-width: 56rem;
-  padding: 1.5rem 2rem; }
+  padding: .6rem 1rem; }
+  @media (min-width: 48em) {
+    .l-container {
+      padding: 1.2rem 2rem; } }
 
 .l-bg-moss-green {
   background: #c2e1ba; }
@@ -1440,19 +1447,28 @@ h6 {
 .l-menu-container {
   margin: 0 auto;
   max-width: 56rem;
-  padding: 1em 0; }
+  padding: .5em 0; }
+
+.pure-menu-heading {
+  padding: 0; }
 
 .pure-menu {
-  background: #ecedf1; }
+  background: #fff; }
   @media (min-width: 48em) {
     .pure-menu .pure-menu-list {
       float: right; } }
   .pure-menu .pure-menu-list .pure-menu-link {
-    color: #635c73; }
+    color: #635c73;
+    position: relative;
+    -webkit-transition: color .15s ease-in-out;
+    transition: color .15s ease-in-out; }
+    .pure-menu .pure-menu-list .pure-menu-link:hover {
+      background: #fff;
+      color: #d7405d; }
 
 .l-hero-container-image {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0.1))), url(../images/bg_header.jpg) 0 0 no-repeat fixed;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)), url(../images/bg_header.jpg) 0 0 no-repeat fixed;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(255, 255, 255, 0.1))), url(../images/bg_header.jpg) 0 0 no-repeat fixed;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.1)), url(../images/bg_header.jpg) 0 0 no-repeat fixed;
   text-align: center;
   background-size: cover;
   width: 100%;
@@ -1463,10 +1479,10 @@ h6 {
       height: 450px; } }
   @media screen and (min-width: 48em) {
     .l-hero-container-image {
-      height: 550px; } }
+      height: 600px; } }
   @media screen and (min-width: 112em) {
     .l-hero-container-image {
-      height: 700px; } }
+      height: 800px; } }
   .l-hero-container-image .l-hero-container {
     border-radius: 9px;
     margin-top: 7em;
@@ -1482,7 +1498,7 @@ h6 {
       .l-hero-container-image .l-hero-container {
         float: right;
         margin-top: 15rem;
-        width: 50%;
+        width: 55%;
         text-align: left; } }
 
 .l-product-offer {
@@ -1494,19 +1510,23 @@ h6 {
 .hero-container-author {
   text-align: right;
   font-size: 1.125em;
-  font-weight: bold; }
+  font-weight: 600; }
 
 .hero-container-text {
   font-size: 1.602em;
-  font-weight: bold; }
+  font-weight: 800; }
 
 .pure-button {
+  font-family: "Raleway", serif;
+  font-size: 1.2em;
+  font-weight: 600;
   padding: 0.7em 6em;
-  border-radius: 10px;
-  font-size: 1.2em; }
+  border-radius: 10px; }
   @media screen and (min-width: 35.5em) {
     .pure-button {
-      padding: 1em 8em; } }
+      padding: .8em 7em;
+      font-size: 1.5em;
+      font-weight: 700; } }
 
 a.pure-button-primary {
   background: #d7405d; }
@@ -1528,7 +1548,7 @@ a.pure-button-primary {
   text-align: left; }
 
 .l-for-whom-item-icon {
-  margin: 0.4em auto; }
+  margin: 1em auto 0; }
 
 .l-for-whom-item-title {
   margin-top: 0; }
@@ -1557,11 +1577,11 @@ a.pure-button-primary {
   position: relative;
   top: 0.3em; }
 
-.c-description-title {
+.description-title {
   margin-top: 1em; }
 
 .l-offer-item {
-  margin: 1rem 0; }
+  margin: 1.5rem 0; }
   .l-offer-item:not(:first-of-type) {
     margin: .5rem 0; }
     @media screen and (min-width: 48em) {
@@ -1589,7 +1609,7 @@ a.pure-button-primary {
 
 .offer-item-desc-title {
   font-style: italic;
-  font-weight: 900;
+  font-weight: 700;
   color: #d7405d;
   font-size: 1.424em; }
   @media screen and (min-width: 48em) {
@@ -1610,3 +1630,76 @@ a.pure-button-primary {
   font-weight: 900;
   color: #635c73;
   font-size: 1.125em; }
+
+.l-about-me-img {
+  border-radius: 10px;
+  border: 2px solid #fff;
+  margin-right: 1.5em;
+  margin-top: 1em; }
+  @media screen and (min-width: 35.5em) {
+    .l-about-me-img {
+      float: left; } }
+
+.l-about-me {
+  padding: .5em 1.5em;
+  font-size: 0.9em;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 35.5em) {
+    .l-about-me:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+.l-footer-address, .l-footer-phone, .l-footer-facebook {
+  margin-top: 1em; }
+  @media screen and (min-width: 35.5em) {
+    .l-footer-address, .l-footer-phone, .l-footer-facebook {
+      margin-top: 0; } }
+
+.l-footer {
+  padding: 1em 0;
+  background: #ecedf1; }
+
+.l-footer-item {
+  color: #d7405d;
+  font-size: 1.5em;
+  margin: 0.2em 1em 0 0;
+  position: relative;
+  top: 0.1em;
+  width: .3em; }
+
+.footer-item-text {
+  font-size: 0.9em;
+  font-weight: 600; }
+
+.footer-logo {
+  display: none; }
+  @media (min-width: 48em) {
+    .footer-logo {
+      display: block; } }
+
+.l-footer-address .footer-item-text > span {
+  margin-left: 2.5em; }
+
+.l-footer-facebook .l-footer-item-text {
+  margin-right: 0.5em; }
+
+.l-footer-navigation-logo {
+  display: none; }
+  @media (min-width: 48em) {
+    .l-footer-navigation-logo {
+      display: block; } }
+  .l-footer-navigation-logo .footer-navigation-item {
+    text-decoration: none;
+    font-family: "Raleway", serif;
+    font-size: .80em;
+    font-weight: 600;
+    color: #635c73;
+    display: inline-block;
+    margin-top: .5em; }
+    .l-footer-navigation-logo .footer-navigation-item:nth-of-type(n+2) {
+      margin-left: .7em; }
+    .l-footer-navigation-logo .footer-navigation-item:hover {
+      color: #d7405d; }
